@@ -224,7 +224,7 @@ void onDisplay(void)
 	// draw the array we just bound
 	glDrawArrays(GL_TRIANGLES, 0, myVertices.size() / 3);
     /*
-        Review: glPolygonMode should not used here, and the function does not return any data
+        Review: glPolygonMode should not be used here, and the function does not return any data
     */
 	if (wireframe) {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -240,7 +240,7 @@ void onDisplay(void)
 }
 
 /*
-    the data type of variable shader should be GLint
+    Review: the data type of variable shader should be GLint
 */
 void showShaderCompileStatus(GLuint shader, GLint shaderCompiled)
 {
